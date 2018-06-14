@@ -1,0 +1,12 @@
+{{#leaflet-map lat=lat
+               lng=lng
+               zoom=zoom
+               zoomControl=false
+               dragging=false
+               scrollWheelZoom=false
+               doubleClickZoom=false}}
+  {{tile-layer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"}}
+
+  {{#marker-layer location=pos}}
+  {{/marker-layer}}
+{{/leaflet-map}}
